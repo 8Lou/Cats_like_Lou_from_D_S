@@ -1,0 +1,112 @@
+.header {
+  width: 100vw;
+  height: 10px;
+  background-color: #a144f86b;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.header_logo {
+  width: 50px;
+  height: auto;
+  /* margin: 10px auto; */
+}
+.nav_btn_group {
+  background-color: #a144f86b;
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+.nav_btn {
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  width: 180px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.nav_btn:hover {
+  background-color: #a144f86b;
+  color: white;
+  border: 1px solid white;
+  transition: ease-in 0.1s;
+}
+.nav_btn:active {
+  transform: translateY(0.5px);
+}
+#wrapper_for_select {
+  position: relative;
+  z-index: 1;
+}
+#sort_options .nav_btn:nth-child(2) {
+  margin: 5px 0;
+}
+#sort_options {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: fit-content;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  transition: opacity 0.2s ease-in-out;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+}
+#sort_options.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.search_hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-magnifying-glass {
+  position: absolute;
+  color: #a144f86b;
+  top: 1px;
+  cursor: pointer;
+}
+.search_hero_input {
+  border: none;
+  border-radius: 30px;
+  height: 35px;
+  padding-left: 20px;
+  outline: none;
+}
+/* Мобильные устройства */
+@media (max-width: 720px) {
+.nav_btn_group {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2px;
+  padding: 0 5px 10px 20px;
+  width: 100vw;
+  height: 100px;
+}
+.nav_btn {
+  font-size: 13px;
+  width: 130px;
+  height: 35px;
+}
+.search_hero_input {
+  width: 130px;
+  height: 35px;
+  margin-right: 88px;
+}
+.fa-magnifying-glass {
+  top: 5px;
+
+}
+}

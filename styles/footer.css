@@ -1,0 +1,32 @@
+.footer {
+  height: 60px;
+  background-color: #a144f86b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.fa-brands {
+  font-size: 35px;
+  margin: 10px;
+}
+.fa-sharp {
+  font-size: 35px;
+  color: rgb(67, 10, 121);
+  margin: 10px;
+}
+
+/* Мобильные устройства */
+@media (max-width: 720px) {
+  .footer {
+    padding: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* использовать при flex-direction: column; */
+    }
+  .fa-brands {
+    font-size: 25px;
+  }
+  .fa-sharp {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,127 @@
+.hero {
+  border: 1px solid rgb(204, 148, 226);
+  box-shadow: 0px 0 8px 8px rgba(89, 9, 138, 0.2);
+  display: grid;
+  gap: 5px;
+  padding: 18px;
+  border-radius: 18px;
+  position: relative;
+  text-align: center;
+  margin: 18px;
+}
+
+.hero:hover {
+  box-shadow: 0px 0px 15px 20px rgba(156, 109, 184, 0.3);
+  transition: 0.1s ease-in-out;
+}
+
+.background_img {
+  height: 300px;
+  border-radius: 18px;
+  background-position: center;
+  background-size: cover;
+  background-image: url('/assets/default.png');
+}
+
+.fa-star {
+  font-size: 35px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 118px;
+  right: 40px;
+}
+
+.favorite_hero {
+  color: rgb(231, 56, 247);
+}
+
+.not_favorite_hero {
+  color: #7b25cc6b;
+}
+
+.hero_options {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.create_hero_fields {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero_field_text {
+  margin-left: 30px;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: bold
+}
+
+.hero_btn_group {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.hero_btn {
+  background-color: #52257c;
+  border: none;
+  border-radius: 30px;
+  width: 180px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.hero_btn:hover {
+  background-color: white;
+  color: #0e06166b;
+  border: 1px solid #0c0b0c6b;
+  transition: ease-in 0.2s;
+}
+
+.rating {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  color: white;
+  font-size: 18px;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a144f86b;
+}
+
+.fa-pen {
+  font-size: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.fa-pen:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: ease-in 0.2s;
+}
+
+.fa-trash-can {
+  font-size: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+  color: rgb(241, 34, 7);
+}
+
+.fa-trash-can:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: ease-in 0.2s;
+}
